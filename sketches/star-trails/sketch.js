@@ -30,6 +30,12 @@ function setup() {
   trails(width / 2, height / 2, width / 2, height / 2, TIME);
 }
 
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  width = windowWidth;
+  height = windowHeight;
+}
+
 function draw() {}
 
 function mouseDragged() {
