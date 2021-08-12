@@ -1,3 +1,6 @@
+// star-trails
+// author: rajeshkumar k
+
 let NTRAILS = 450;
 let MAX_RAD;
 let DIM = 1080;
@@ -13,13 +16,18 @@ let GRAD_DARK = ["#040f1f", "#05083d", "#050619", "#131b2d", "#0c0f18"];
 let TIME = 0.25;
 
 function setup() {
-  createCanvas(DIM, DIM);
+  // createCanvas(DIM, DIM);
+  let canvas = createCanvas(windowWidth, windowHeight);
+  canvas.parent("sketch-container");
+  canvas.style("display", "block");
+  width = windowWidth;
+  height = windowHeight;
   strokeCap(ROUND);
   noFill();
   noLoop();
   // frameRate(FPS);
   MAX_RAD = sqrt((width / 2) ** 2 + (height / 2) ** 2);
-  // trails(width / 2, height / 2, width / 2, height / 2);
+  trails(width / 2, height / 2, width / 2, height / 2, TIME);
 }
 
 function draw() {}

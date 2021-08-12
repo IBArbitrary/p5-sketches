@@ -8,12 +8,33 @@ h6 {
   margin: 0;
 }
 
-* {
+body {
   font-family: monospace;
+  font-size: 20px;
   background-color: black;
   color: white;
 }
 
-body {
-  font-size: 20px;
+#sketch-container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.info {
+  background-color: transparent !important;
+}
+
+.textbg span {
+  background-color: black;
+  padding: 5px;
+}
+
+h1.textbg {
+  margin-bottom: 0px !important;
+}
+
+p.textbg {
+  margin-top: 0px !important;
 }
